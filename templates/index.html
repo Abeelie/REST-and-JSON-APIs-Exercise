@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cupcakes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<h1 class="col-xs-1" align="center">See all the cupcakes!</h1>
+
+<div class="col-xs-1" align="center">
+<h2>Add a new cupcake!</h2>
+<form id="new-cupcake-form">
+  <div class="form-group" >
+    <label for="form-flavor">Flavor: </label>
+    <input name="flavor" id="form-flavor">
+  </div>
+ <div class="form-group">
+    <label for="form-size">Size: </label>
+    <input name="size" id="form-size">
+  </div>
+  <div class="form-group">
+    <label for="form-rating">Rating: </label>
+    <input type="number" name="rating" id="form-rating">
+  </div>
+  <div class="form-group">
+    <label for="form-image">Image: </label>
+    <input name="image" id="form-image">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+<ul id="cupcakes-list" class="col-xs-1" align="center"></ul>
+
+<script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="/static/cupcakes.js"></script>
+
+</body>
+</html>
